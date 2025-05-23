@@ -11,7 +11,7 @@ export class AppComponent {
   data: any;
 
   constructor(private http: HttpClient) {
-    this.http.get("TUO_URL/simple_json")
+    this.http.get("https://5000-iginiomassa-progettofin-qvasd48k17g.ws-eu119.gitpod.io/simple_json")
       .subscribe(
         (data) => this.data = data
       );
